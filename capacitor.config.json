@@ -1,0 +1,8 @@
+{
+  "appId": "pk.offer.shahdarafibernet",
+  "appName": "Shahdara Fiber Net",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  }
+}

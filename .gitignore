@@ -5,6 +5,7 @@ dist/
 Thumbs.db
 .env
 .env.local
+scripts/push-to-github.js
 
 # Android build outputs
 android/.gradle/
