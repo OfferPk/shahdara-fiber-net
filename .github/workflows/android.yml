@@ -53,19 +53,12 @@ jobs:
         working-directory: android
         run: |
           chmod +x gradlew
-          ./gradlew --no-daemon assembleDebug
+          ./gradlew --no-daemon :app:assembleDebug
 
       - name: Collect outputs
         run: |
           mkdir -p dist
-          APK_PATH=$(find android -name "*.apk" | head -n 1)
-          if [ -z "$APK_PATH" ]; then
-            echo "Error: No APK found!"
-            find android -maxdepth 5 -ls || true
-            exit 1
-          fi
-          echo "Found APK at: $APK_PATH"
-          cp "$APK_PATH" dist/shahdara-fiber-net-debug.apk
+          cp android/app/build/outputs/apk/debug/app-debug.apk dist/shahdara-fiber-net-debug.apk
           ls -la dist
 
       - name: Upload APK artifact
