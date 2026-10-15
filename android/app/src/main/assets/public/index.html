@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="theme-color" content="#123c35">
+  <meta name="description" content="Shahdara Fiber Net - Customer App & Self-Service Portal. Superfast FTTH optical fiber internet packages, instant new connection booking, complaints & live ticket tracking, bill payment guides, and coverage in Shahdara.">
+  <title>Shahdara Fiber Net · High-Speed FTTH Customer Portal</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23123c35%22/><text y=%2265%22 x=%2250%22 font-size=%2250%22 font-weight=%22900%22 text-anchor=%22middle%22 fill=%22%2300b894%22>SF</text></svg>">
+</head>
+<body>
+  <a class="skip-link" href="#main-content" data-i18n="skip_to_content">Skip to content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-top">
+      <a href="#" class="brand" id="brand-link" aria-label="Shahdara Fiber Net Home">
+        <div class="brand-mark">SF</div>
+        <div class="brand-title">
+          <strong id="brand-name">Shahdara Fiber Net</strong>
+          <small id="brand-tagline-short" data-i18n="tagline_short">FTTH High Speed Customer Portal</small>
+        </div>
+      </a>
+
+      <div class="header-actions">
+        <!-- Language Switcher -->
+        <div class="lang-switch" role="group" aria-label="Language selection">
+          <button type="button" class="lang-btn active" id="lang-en" data-lang="en">EN</button>
+          <button type="button" class="lang-btn" id="lang-ur" data-lang="ur">اردو</button>
+        </div>
+
+        <!-- Theme Toggle -->
+        <button type="button" class="btn-icon" id="theme-toggle" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <span id="theme-icon">🌙</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <nav class="nav-bar" aria-label="Main Navigation">
+      <div class="nav-container">
+        <button type="button" class="nav-item active" data-tab="home">
+          <span>🏠</span> <span data-i18n="nav_home">Home</span>
+        </button>
+        <button type="button" class="nav-item" data-tab="packages">
+          <span>⚡</span> <span data-i18n="nav_packages">Packages</span>
+        </button>
+        <button type="button" class="nav-item" data-tab="connection">
+          <span>🔌</span> <span data-i18n="nav_connection">New Connection</span>
+        </button>
+        <button type="button" class="nav-item" data-tab="billing">
+          <span>💳</span> <span data-i18n="nav_billing">Bill & Pay</span>
+        </button>
+        <button type="button" class="nav-item" data-tab="complaints">
+          <span>🛠️</span> <span data-i18n="nav_complaints">Complaints & FAQ</span>
+        </button>
+        <button type="button" class="nav-item" data-tab="coverage">
+          <span>📍</span> <span data-i18n="nav_coverage">Coverage Areas</span>
+        </button>
+        <button type="button" class="nav-item" data-tab="contact">
+          <span>📞</span> <span data-i18n="nav_contact">Contact Us</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content Container -->
+  <main id="main-content">
+
+    <!-- 1. HOME TAB -->
+    <section class="page-tab active" id="tab-home" aria-labelledby="home-heading">
+      <div class="hero-card">
+        <div class="hero-glow"></div>
+        <div class="hero-content">
+          <div class="badge-pill">
+            <span class="pulse-dot"></span>
+            <span data-i18n="hero_badge">Shahdara Gigabit Optical Backbone Live</span>
+          </div>
+          <h1 class="hero-title" id="home-heading">
+            <span data-i18n="hero_title_1">Ultra-Fast Fiber</span><br>
+            <span data-i18n="hero_title_2">Built for Shahdara</span>
+          </h1>
+          <p class="hero-desc" id="hero-tagline-full">
+            Experience next-generation Fiber-To-The-Home (FTTH) with rock-solid uptime, zero buffer 4K streaming, low-latency competitive gaming, and dedicated 24/7 localized support.
+          </p>
+          <div class="hero-actions">
+            <button type="button" class="btn btn-primary" data-nav-target="connection">
+              <span>🚀</span> <span data-i18n="btn_order_now">Get New Connection</span>
+            </button>
+            <button type="button" class="btn btn-outline-white" data-nav-target="packages">
+              <span>⚡</span> <span data-i18n="btn_view_plans">View Packages</span>
+            </button>
+            <a href="#" class="btn btn-whatsapp" id="hero-whatsapp-btn" target="_blank" rel="noopener noreferrer">
+              <span>💬</span> <span>WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Action Cards Grid -->
+      <div class="quick-actions-grid">
+        <div class="action-card" data-nav-target="packages">
+          <div class="action-icon">⚡</div>
+          <h3 data-i18n="qa_plans_title">Fiber Packages</h3>
+          <p data-i18n="qa_plans_desc">Explore symmetrical speeds from 20 Mbps up to 150+ Mbps with unlimited data.</p>
+          <div class="action-link"><span data-i18n="learn_more">Compare Plans</span> →</div>
+        </div>
+
+        <div class="action-card" data-nav-target="connection">
+          <div class="action-icon">🔌</div>
+          <h3 data-i18n="qa_conn_title">Instant Booking</h3>
+          <p data-i18n="qa_conn_desc">Apply for optical drop cable installation with our rapid 24h setup team.</p>
+          <div class="action-link"><span data-i18n="apply_now">Apply Online</span> →</div>
+        </div>
+
+        <div class="action-card" data-nav-target="billing">
+          <div class="action-icon">💳</div>
+          <h3 data-i18n="qa_bill_title">Bill & Payment</h3>
+          <p data-i18n="qa_bill_desc">Look up your monthly invoice and find Easypaisa, JazzCash, or bank details.</p>
+          <div class="action-link"><span data-i18n="pay_bill">Check Bill</span> →</div>
+        </div>
+
+        <div class="action-card" data-nav-target="complaints">
+          <div class="action-icon">🛠️</div>
+          <h3 data-i18n="qa_supp_title">Support & Complaints</h3>
+          <p data-i18n="qa_supp_desc">Log a ticket for Red LOS light, speed check, or wire repairs with live tracking.</p>
+          <div class="action-link"><span data-i18n="log_ticket">Open Ticket</span> →</div>
+        </div>
+      </div>
+
+      <!-- Interactive Speed Test Simulator -->
+      <div class="speedtest-card">
+        <div class="section-eyebrow" data-i18n="speed_diag_eyebrow">Interactive Speed Diagnostics</div>
+        <h2 class="section-title" data-i18n="speed_diag_title">Test Your Optical Performance</h2>
+        <p class="section-desc" data-i18n="speed_diag_desc">Simulate a real-time fiber diagnostic connection to our Shahdara core exchange node.</p>
+
+        <div class="gauge-cluster">
+          <div class="gauge-item">
+            <div class="gauge-val" id="diag-ping">--</div>
+            <div class="gauge-label" data-i18n="stat_ping">Ping (Latency)</div>
+          </div>
+          <div class="gauge-item">
+            <div class="gauge-val" id="diag-down">--</div>
+            <div class="gauge-label" data-i18n="stat_download">Download Speed</div>
+          </div>
+          <div class="gauge-item">
+            <div class="gauge-val" id="diag-up">--</div>
+            <div class="gauge-label" data-i18n="stat_upload">Upload Speed</div>
+          </div>
+        </div>
+
+        <button type="button" class="btn btn-secondary" id="btn-run-speedtest">
+          <span>▶</span> <span id="speedtest-btn-text" data-i18n="btn_start_test">Run Live Fiber Speed Test</span>
+        </button>
+      </div>
+
+      <!-- Why Choose Us / Feature Pillars -->
+      <div class="section-header">
+        <div class="section-eyebrow" data-i18n="why_eyebrow">Enterprise Grade Quality</div>
+        <h2 class="section-title" data-i18n="why_title">Why Choose Shahdara Fiber Net?</h2>
+      </div>
+
+      <div class="pillars-grid">
+        <div class="pillar-card">
+          <div class="pillar-icon">💎</div>
+          <div class="pillar-info">
+            <h4 data-i18n="pillar_1_title">100% Pure Optical FTTH</h4>
+            <p data-i18n="pillar_1_desc">Laser-spliced glass optical cable running straight into your premises with zero copper degradation.</p>
+          </div>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-icon">🎮</div>
+          <div class="pillar-info">
+            <h4 data-i18n="pillar_2_title">Low Ping for Gamers</h4>
+            <p data-i18n="pillar_2_desc">Optimized direct routing to Middle East and Asian servers for PUBG, Valorant, Fortnite, and CS2.</p>
+          </div>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-icon">🔋</div>
+          <div class="pillar-info">
+            <h4 data-i18n="pillar_3_title">Power Outage Backed</h4>
+            <p data-i18n="pillar_3_desc">Distribution cabinets powered with heavy-duty backup batteries & generators during area load-shedding.</p>
+          </div>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-icon">🛡️</div>
+          <div class="pillar-info">
+            <h4 data-i18n="pillar_4_title">24/7 Local Shahdara Team</h4>
+            <p data-i18n="pillar_4_desc">Our dedicated field linemen and technician van are based right here in Shahdara for instant repair.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. PACKAGES TAB -->
+    <section class="page-tab" id="tab-packages" aria-labelledby="packages-heading">
+      <div class="section-header">
+        <div class="section-eyebrow" data-i18n="packages_eyebrow">High-Speed Fiber Plans</div>
+        <h1 class="section-title" id="packages-heading" data-i18n="packages_title">Choose Your Ideal Speed</h1>
+        <p class="section-desc" data-i18n="packages_desc">Every package comes with unlimited bandwidth, standard drop wire, and 24/7 support.</p>
+      </div>
+
+      <!-- Packages Cards Container (populated from config/business.json) -->
+      <div class="packages-grid" id="packages-cards-container">
+        <!-- Rendered dynamically -->
+      </div>
+
+      <!-- Feature Comparison Table -->
+      <div class="section-header" style="margin-top: 3rem;">
+        <div class="section-eyebrow" data-i18n="compare_eyebrow">Detailed Feature Matrix</div>
+        <h2 class="section-title" data-i18n="compare_title">Compare All Fiber Packages</h2>
+      </div>
+
+      <div class="table-responsive">
+        <table class="compare-table" aria-label="Package Comparison Table">
+          <thead>
+            <tr>
+              <th scope="col" data-i18n="tbl_feature">Feature</th>
+              <th scope="col">Starter (20 Mbps)</th>
+              <th scope="col">Streamer (40 Mbps)</th>
+              <th scope="col">Gamer (75 Mbps)</th>
+              <th scope="col">Business (150 Mbps+)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" data-i18n="tbl_data_limit">Data Limit</th>
+              <td>Unlimited</td>
+              <td>Unlimited</td>
+              <td>Unlimited</td>
+              <td>Unlimited</td>
+            </tr>
+            <tr>
+              <th scope="row" data-i18n="tbl_streaming">Video Streaming</th>
+              <td>Full HD (1080p)</td>
+              <td>4K Ultra-HD</td>
+              <td>Simultaneous 4K/8K</td>
+              <td>Unrestricted Multi-stream</td>
+            </tr>
+            <tr>
+              <th scope="row" data-i18n="tbl_upload">Upload Speed</th>
+              <td>Symmetrical</td>
+              <td>Symmetrical</td>
+              <td>Symmetrical Low-Jitter</td>
+              <td>1:1 CIR Dedicated</td>
+            </tr>
+            <tr>
+              <th scope="row" data-i18n="tbl_devices">Recommended Devices</th>
+              <td>1 - 3 Devices</td>
+              <td>4 - 8 Devices</td>
+              <td>8 - 15 Devices</td>
+              <td>15+ Devices / Offices</td>
+            </tr>
+            <tr>
+              <th scope="row" data-i18n="tbl_router">ONT Router Option</th>
+              <td>Single-band Wi-Fi</td>
+              <td>Dual-band AC1200</td>
+              <td>Gigabit Dual-band AC/AX</td>
+              <td>Enterprise Dual Core Gigabit</td>
+            </tr>
+            <tr>
+              <th scope="row" data-i18n="tbl_sla">Uptime SLA</th>
+              <td>99.0%</td>
+              <td>99.5%</td>
+              <td>99.8%</td>
+              <td>99.9% Committed</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 3. NEW CONNECTION REQUEST TAB -->
+    <section class="page-tab" id="tab-connection" aria-labelledby="connection-heading">
+      <div class="section-header">
+        <div class="section-eyebrow" data-i18n="conn_eyebrow">Join Shahdara Fiber Net</div>
+        <h1 class="section-title" id="connection-heading" data-i18n="conn_title">Apply for a New Fiber Connection</h1>
+        <p class="section-desc" data-i18n="conn_desc">Fill out the quick form below. Our field technician team will verify line availability and contact you.</p>
+      </div>
+
+      <div class="form-card">
+        <form id="connection-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="conn-name">
+                <span data-i18n="lbl_name">Full Name</span> <span class="required">*</span>
+              </label>
+              <input type="text" id="conn-name" class="form-input" placeholder="e.g. Muhammad Ali" required minlength="2">
+              <div class="form-error-msg" id="err-conn-name">Please provide your full name (at least 2 characters).</div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="conn-phone">
+                <span data-i18n="lbl_phone">Mobile / WhatsApp Number</span> <span class="required">*</span>
+              </label>
+              <input type="tel" id="conn-phone" class="form-input" placeholder="0300-1234567" required>
+              <div class="form-help" data-i18n="phone_help">We will message your installation confirmation on this number.</div>
+              <div class="form-error-msg" id="err-conn-phone">Please enter a valid mobile number (10-15 digits).</div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="conn-package">
+                <span data-i18n="lbl_package">Selected Fiber Package</span> <span class="required">*</span>
+              </label>
+              <select id="conn-package" class="form-select" required>
+                <!-- populated dynamically -->
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="conn-area">
+                <span data-i18n="lbl_area">Shahdara Coverage Area</span> <span class="required">*</span>
+              </label>
+              <select id="conn-area" class="form-select" required>
+                <!-- populated dynamically -->
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="conn-address">
+              <span data-i18n="lbl_address">Installation Street Address</span> <span class="required">*</span>
+            </label>
+            <input type="text" id="conn-address" class="form-input" placeholder="e.g. House 24, Street 5, Near Bilal Masjid, Saeed Park" required minlength="5">
+            <div class="form-error-msg" id="err-conn-address">Please provide a complete address with nearby landmarks.</div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="conn-time">
+                <span data-i18n="lbl_time">Preferred Installation Time</span>
+              </label>
+              <select id="conn-time" class="form-select">
+                <option value="Morning (9:00 AM - 1:00 PM)">Morning (9:00 AM - 1:00 PM)</option>
+                <option value="Afternoon (1:00 PM - 5:00 PM)">Afternoon (1:00 PM - 5:00 PM)</option>
+                <option value="Evening (5:00 PM - 8:00 PM)">Evening (5:00 PM - 8:00 PM)</option>
+                <option value="Anytime">Anytime during working hours</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="conn-cnic">
+                <span data-i18n="lbl_cnic">CNIC / ID (Optional)</span>
+              </label>
+              <input type="text" id="conn-cnic" class="form-input" placeholder="35201-XXXXXXX-X">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="conn-notes">
+              <span data-i18n="lbl_notes">Special Instructions (Optional)</span>
+            </label>
+            <textarea id="conn-notes" class="form-textarea" rows="2" placeholder="e.g. Need optical cable dropped from front pole to 2nd floor router point"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block" id="btn-submit-conn">
+            <span>📩</span> <span data-i18n="btn_submit_order">Submit Connection Application</span>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- 4. BILLING & PAYMENT TAB -->
+    <section class="page-tab" id="tab-billing" aria-labelledby="billing-heading">
+      <div class="section-header">
+        <div class="section-eyebrow" data-i18n="bill_eyebrow">Self-Service Account Center</div>
+        <h1 class="section-title" id="billing-heading" data-i18n="bill_title">Bill Lookup & Payment Methods</h1>
+        <p class="section-desc" data-i18n="bill_desc">Look up your current account balance and pay via Easypaisa, JazzCash, 1Link Bank Transfer, or our local desk.</p>
+      </div>
+
+      <!-- Bill Lookup Card -->
+      <div class="form-card" style="margin-bottom: 2.5rem;">
+        <h3 style="margin-bottom: 0.5rem; font-weight: 800;" data-i18n="bill_search_title">🔍 Fast Bill Lookup</h3>
+        <p class="form-help" style="margin-bottom: 1.25rem;" data-i18n="bill_search_help">Enter your Customer ID (e.g. SFN-1001) or registered mobile phone number to check invoice details.</p>
+
+        <form id="bill-lookup-form">
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+            <input type="text" id="bill-lookup-query" class="form-input" style="flex: 1; min-width: 220px;" placeholder="e.g. 03001234567 or SFN-1001" required>
+            <button type="submit" class="btn btn-primary" id="btn-search-bill">
+              <span>🔎</span> <span data-i18n="btn_find_bill">Find Invoice</span>
+            </button>
+          </div>
+        </form>
+
+        <!-- Bill Result Box -->
+        <div id="bill-result-box" style="display: none; margin-top: 1.5rem; padding: 1.25rem; background: var(--bg-surface-subtle); border-radius: var(--radius-md); border: 1px solid var(--border);">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+            <strong id="bill-cust-name" style="font-size: 1.1rem;">Customer Name</strong>
+            <span id="bill-status-badge" class="status-chip available">Paid</span>
+          </div>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.75rem; font-size: 0.875rem;">
+            <div><span class="text-muted">Customer ID:</span> <strong id="bill-cust-id">SFN-0000</strong></div>
+            <div><span class="text-muted">Package:</span> <strong id="bill-pkg-name">Package Name</strong></div>
+            <div><span class="text-muted">Monthly Due:</span> <strong id="bill-amount" style="color: var(--accent);">PKR 0000 - EDIT ME</strong></div>
+            <div><span class="text-muted">Due Date:</span> <strong id="bill-due-date">10th of Month</strong></div>
+            <div><span class="text-muted">Billing Cycle:</span> <strong id="bill-cycle">Current Month</strong></div>
+            <div><span class="text-muted">Last Payment:</span> <strong id="bill-last-pay">Verified</strong></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Payment Channels -->
+      <div class="section-header">
+        <div class="section-eyebrow" data-i18n="channels_eyebrow">How to Pay</div>
+        <h2 class="section-title" data-i18n="channels_title">Official Payment Channels</h2>
+      </div>
+
+      <div class="payment-grid" id="payment-methods-container">
+        <!-- Rendered dynamically from business.json -->
+      </div>
+    </section>
+
+    <!-- 5. COMPLAINTS & SUPPORT TAB -->
+    <section class="page-tab" id="tab-complaints" aria-labelledby="complaints-heading">
+      <div class="section-header">
+        <div class="section-eyebrow" data-i18n="support_eyebrow">Customer Care & Support</div>
+        <h1 class="section-title" id="complaints-heading" data-i18n="support_title">Report an Issue & Track Tickets</h1>
+        <p class="section-desc" data-i18n="support_desc">Experiencing red LOS lights, optical drops, or slow speed? Log a ticket below or track an existing one.</p>
+      </div>
+
+      <!-- Ticket Tracking & Lookup Card -->
+      <div class="form-card" style="margin-bottom: 2.5rem;">
+        <h3 style="margin-bottom: 0.5rem; font-weight: 800;" data-i18n="track_title">🔎 Track Existing Ticket</h3>
+        <p class="form-help" style="margin-bottom: 1.25rem;" data-i18n="track_help">Enter your Ticket ID (e.g. SFN-TCK-1024) to see current technician dispatch status.</p>
+
+        <form id="ticket-lookup-form">
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+            <input type="text" id="track-ticket-id" class="form-input" style="flex: 1; min-width: 220px;" placeholder="e.g. SFN-TCK-1234" required>
+            <button type="submit" class="btn btn-secondary">
+              <span>📍</span> <span data-i18n="btn_track">Track Ticket</span>
+            </button>
+          </div>
+        </form>
+
+        <div id="ticket-status-box" style="display: none; margin-top: 1.25rem; padding: 1.25rem; background: var(--bg-surface-subtle); border-radius: var(--radius-md); border: 1px solid var(--border);">
+          <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+            <strong id="track-res-id">SFN-TCK-0000</strong>
+            <span id="track-res-status" class="status-chip available">In Progress</span>
+          </div>
+          <p id="track-res-desc" style="font-size: 0.9rem; margin-bottom: 0.75rem; color: var(--text-muted);"></p>
+          <div id="track-res-timeline" style="font-size: 0.8rem; border-left: 2px solid var(--accent); padding-left: 0.75rem; display: flex; flex-direction: column; gap: 0.4rem;"></div>
+        </div>
+      </div>
+
+      <!-- Lodge Complaint Form -->
+      <div class="form-card">
+        <h3 style="margin-bottom: 0.5rem; font-weight: 800;" data-i18n="lodge_title">📝 Log a New Support Ticket</h3>
+        <p class="form-help" style="margin-bottom: 1.25rem;" data-i18n="lodge_desc">Submit your issue details. Our automated NOC routing dispatches the ticket directly to our Shahdara fiber linemen.</p>
+
+        <form id="complaint-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="comp-id-phone">
+                <span data-i18n="lbl_comp_phone">Customer ID or Mobile Number</span> <span class="required">*</span>
+              </label>
+              <input type="text" id="comp-id-phone" class="form-input" placeholder="e.g. 0300-1234567 or SFN-1001" required minlength="3">
+              <div class="form-error-msg" id="err-comp-phone">Please enter your Customer ID or registered mobile phone.</div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="comp-category">
+                <span data-i18n="lbl_comp_category">Issue Category</span> <span class="required">*</span>
+              </label>
+              <select id="comp-category" class="form-select" required>
+                <option value="Red LOS Light / Total Outage">Red LOS Light / Total Optical Outage</option>
+                <option value="Slow Speed & Buffering">Slow Speed / High Latency & Buffering</option>
+                <option value="Frequent Wire Disconnections">Frequent Disconnections / Loose Cable</option>
+                <option value="Physical Fiber Wire Cut">Fiber Cable Cut / Fallen Outdoor Drop</option>
+                <option value="Router / Wi-Fi Configuration">Router Wi-Fi Password / Setup Query</option>
+                <option value="Billing / Payment Verification">Billing / Payment Verification Issue</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="comp-urgency">
+              <span data-i18n="lbl_comp_urgency">Urgency Level</span>
+            </label>
+            <select id="comp-urgency" class="form-select">
+              <option value="Normal">Normal - Standard Dispatch</option>
+              <option value="High">High - Work / Office Affected</option>
+              <option value="Critical">Critical - Complete Outage / Wire Severed</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="comp-desc">
+              <span data-i18n="lbl_comp_desc">Describe the Problem</span> <span class="required">*</span>
+            </label>
+            <textarea id="comp-desc" class="form-textarea" rows="3" placeholder="Please mention when it started, if router lights are red, and exact house location." required minlength="5"></textarea>
+            <div class="form-error-msg" id="err-comp-desc">Please write a short description of the issue (at least 5 characters).</div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block" id="btn-submit-complaint">
+            <span>🚨</span> <span data-i18n="btn_submit_ticket">Register Complaint Ticket</span>
+          </button>
+        </form>
+      </div>
+
+      <!-- FAQ Section -->
+      <div class="section-header" style="margin-top: 3rem;">
+        <div class="section-eyebrow" data-i18n="faq_eyebrow">Self-Help Troubleshooting</div>
+        <h2 class="section-title" data-i18n="faq_title">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="faq-list" id="faq-list-container">
+        <!-- populated from business.json -->
+      </div>
+    </section>
+
+    <!-- 6. COVERAGE AREAS TAB -->
+    <section class="page-tab" id="tab-coverage" aria-labelledby="coverage-heading">
+      <div class="section-header">
+        <div class="section-eyebrow" data-i18n="cov_eyebrow">Service Availability Map</div>
+        <h1 class="section-title" id="coverage-heading" data-i18n="cov_title">Shahdara Optical Network Coverage</h1>
+        <p class="section-desc" data-i18n="cov_desc">Search your sector, colony, or street in Shahdara to check if Gigabit Fiber is live.</p>
+      </div>
+
+      <div class="coverage-controls">
+        <div class="search-input-wrap">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="coverage-search" class="form-input" placeholder="Search by area name (e.g. Saeed Park, Begum Kot, Wandala Road)...">
+        </div>
+
+        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <button type="button" class="btn btn-sm btn-secondary active" data-cov-filter="all">All Areas</button>
+          <button type="button" class="btn btn-sm btn-secondary" data-cov-filter="Available">Available Now</button>
+          <button type="button" class="btn btn-sm btn-secondary" data-cov-filter="Expanding">Expanding Soon</button>
+        </div>
+      </div>
+
+      <div class="coverage-grid" id="coverage-grid-container">
+        <!-- Rendered dynamically -->
+      </div>
+
+      <div class="form-card" style="text-align: center; padding: 2rem;">
+        <h3 style="margin-bottom: 0.5rem; font-weight: 800;" data-i18n="cov_req_title">Don't see your street listed?</h3>
+        <p class="form-help" style="margin-bottom: 1.25rem;" data-i18n="cov_req_desc">We expand fiber loops weekly! Request coverage for your street or colony and we will prioritize your neighborhood.</p>
+        <button type="button" class="btn btn-primary" id="btn-request-coverage-modal">
+          <span>📍</span> <span data-i18n="btn_req_cov">Request Fiber for My Street</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- 7. CONTACT US TAB -->
+    <section class="page-tab" id="tab-contact" aria-labelledby="contact-heading">
+      <div class="section-header">
+        <div class="section-eyebrow" data-i18n="contact_eyebrow">Get in Touch</div>
+        <h1 class="section-title" id="contact-heading" data-i18n="contact_title">Contact Shahdara Fiber Net</h1>
+        <p class="section-desc" data-i18n="contact_desc">Direct telephone lines, instant WhatsApp chat, and physical customer center information.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-icon">💬</div>
+          <h3 data-i18n="contact_wa_title">Official WhatsApp</h3>
+          <p data-i18n="contact_wa_desc">Chat directly with our billing and installation managers for instant assistance.</p>
+          <div style="font-family: var(--font-mono); font-weight: 800; font-size: 1.1rem; color: var(--accent);" id="contact-wa-val">
+            +92-XXX-XXXXXXX
+          </div>
+          <a href="#" class="btn btn-whatsapp" id="contact-wa-link" target="_blank" rel="noopener noreferrer" style="margin-top: auto;">
+            <span>💬</span> <span>Open WhatsApp Chat</span>
+          </a>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">📞</div>
+          <h3 data-i18n="contact_phone_title">Helpline & Calling</h3>
+          <p data-i18n="contact_phone_desc">Call our round-the-clock technical helpline for immediate connection issues.</p>
+          <div style="font-family: var(--font-mono); font-weight: 800; font-size: 1.1rem; color: var(--text-main);" id="contact-phone-val">
+            +92-XXX-XXXXXXX
+          </div>
+          <a href="#" class="btn btn-secondary" id="contact-tel-link" style="margin-top: auto;">
+            <span>📞</span> <span>Call Technical Helpline</span>
+          </a>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">🏢</div>
+          <h3 data-i18n="contact_office_title">Main Customer Center</h3>
+          <p data-i18n="contact_office_desc">Visit our regional service desk for hardware pickup, router exchanges, and cash bill payments.</p>
+          <div style="font-size: 0.9rem; color: var(--text-muted); font-weight: 600;" id="contact-addr-val">
+            Main GT Road, Shahdara Town, Lahore - EDIT ME
+          </div>
+          <div style="font-size: 0.8rem; color: var(--accent); font-weight: 700; margin-top: 0.5rem;" id="contact-hours-val">
+            Open 9:00 AM - 9:00 PM (Daily)
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Modals -->
+  <!-- 1. Connection Success Modal -->
+  <div class="modal-overlay" id="modal-conn-success" role="dialog" aria-modal="true" aria-labelledby="modal-conn-title">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close-btn" data-close-modal="modal-conn-success" aria-label="Close dialog">&times;</button>
+      <div class="success-badge-icon">✓</div>
+      <h2 id="modal-conn-title" style="text-align: center; font-weight: 800; margin-bottom: 0.5rem;" data-i18n="m_conn_title">Application Received!</h2>
+      <p style="text-align: center; color: var(--text-muted); font-size: 0.9rem;" data-i18n="m_conn_desc">Thank you for choosing Shahdara Fiber Net. Your connection request has been logged in our optical queue.</p>
+
+      <div class="ref-code-box">
+        <div class="label" data-i18n="m_ref_label">Application Reference ID</div>
+        <div class="code" id="modal-conn-ref">SFN-CONN-0000</div>
+      </div>
+
+      <p style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-bottom: 1.5rem;" data-i18n="m_conn_wa_tip">
+        For immediate dispatch, you can forward this reference directly to our WhatsApp operations desk:
+      </p>
+
+      <div style="display: flex; gap: 0.75rem; flex-direction: column;">
+        <a href="#" class="btn btn-whatsapp" id="modal-conn-wa-btn" target="_blank" rel="noopener noreferrer">
+          <span>💬</span> <span data-i18n="btn_forward_wa">Forward to WhatsApp Desk</span>
+        </a>
+        <button type="button" class="btn btn-secondary" data-close-modal="modal-conn-success" data-i18n="btn_done">
+          Close & Return
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Complaint Ticket Success Modal -->
+  <div class="modal-overlay" id="modal-comp-success" role="dialog" aria-modal="true" aria-labelledby="modal-comp-title">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close-btn" data-close-modal="modal-comp-success" aria-label="Close dialog">&times;</button>
+      <div class="success-badge-icon" style="background: rgba(9, 132, 227, 0.15); color: var(--secondary);">🛠️</div>
+      <h2 id="modal-comp-title" style="text-align: center; font-weight: 800; margin-bottom: 0.5rem;" data-i18n="m_comp_title">Support Ticket Logged</h2>
+      <p style="text-align: center; color: var(--text-muted); font-size: 0.9rem;" data-i18n="m_comp_desc">Our Shahdara field technicians have been notified. Please retain your Ticket ID for tracking.</p>
+
+      <div class="ref-code-box">
+        <div class="label" data-i18n="m_tck_label">Your Ticket ID</div>
+        <div class="code" id="modal-comp-tck">SFN-TCK-0000</div>
+      </div>
+
+      <div style="display: flex; gap: 0.75rem; flex-direction: column;">
+        <a href="#" class="btn btn-whatsapp" id="modal-comp-wa-btn" target="_blank" rel="noopener noreferrer">
+          <span>💬</span> <span data-i18n="btn_notify_wa">Send Ticket to WhatsApp NOC</span>
+        </a>
+        <button type="button" class="btn btn-secondary" data-close-modal="modal-comp-success" data-i18n="btn_done">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Coverage Request Street Modal -->
+  <div class="modal-overlay" id="modal-coverage-req" role="dialog" aria-modal="true" aria-labelledby="modal-cov-title">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close-btn" data-close-modal="modal-coverage-req" aria-label="Close dialog">&times;</button>
+      <h2 id="modal-cov-title" style="font-weight: 800; margin-bottom: 0.5rem;" data-i18n="m_cov_title">Request Fiber for Your Area</h2>
+      <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1.25rem;" data-i18n="m_cov_desc">Provide your neighborhood details so our fiber planning team can survey your street.</p>
+
+      <form id="cov-request-form">
+        <div class="form-group">
+          <label class="form-label" for="cov-req-area" data-i18n="lbl_neighborhood">Colony / Neighborhood Name</label>
+          <input type="text" id="cov-req-area" class="form-input" placeholder="e.g. Rachna Town Phase 2" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="cov-req-phone" data-i18n="lbl_contact_phone">Contact Number</label>
+          <input type="tel" id="cov-req-phone" class="form-input" placeholder="0300-1234567" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" data-i18n="btn_send_req">
+          Send Area Survey Request
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="app-toast" id="app-toast" role="status" aria-live="polite"></div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div>
+        <div style="font-weight: 800; font-size: 1.1rem; color: var(--text-main);" id="footer-company-name">Shahdara Fiber Net</div>
+        <div class="footer-meta" id="footer-tagline">High-Speed Optical Fiber Internet for Shahdara & Surrounding Areas</div>
+        <div class="footer-meta" style="margin-top: 0.4rem;">
+          <span data-i18n="footer_rights">© 2026 Shahdara Fiber Net. All rights reserved.</span>
+        </div>
+      </div>
+      <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+        <span class="footer-badge" id="backend-status-badge">● PWA Ready</span>
+        <span style="font-size: 0.8rem; color: var(--text-muted);">v1.0.0</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Shahdara Fiber Net</string>
+    <string name="title_activity_main">Shahdara Fiber Net</string>
+    <string name="package_name">pk.offer.shahdarafibernet</string>
+    <string name="custom_url_scheme">pk.offer.shahdarafibernet</string>
+</resources>
