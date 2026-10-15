@@ -145,3 +145,51 @@ test('API endpoints with mocked fetch / simulated requests', async () => {
     server.close();
   }
 });
+
+test('Edge-case validation rules for connections and complaints', async () => {
+  const app = createApp();
+  const server = await new Promise((resolve) => {
+    const s = app.listen(0, () => resolve(s));
+  });
+  const port = server.address().port;
+  const baseUrl = `http://127.0.0.1:${port}`;
+
+  try {
+    // 1. Connection with whitespace-only fields
+    const emptyFieldsRes = await fetch(`${baseUrl}/api/connections`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        fullName: '   ',
+        phone: '123',
+        address: '  ',
+        packageId: 'invalid-package-id'
+      })
+    });
+    assert.equal(emptyFieldsRes.status, 400);
+    const emptyJson = await emptyFieldsRes.json();
+    assert.equal(emptyJson.success, false);
+    assert.ok(emptyJson.errors.length >= 2);
+
+    // 2. Complaint with short description
+    const shortComplaintRes = await fetch(`${baseUrl}/api/complaints`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        customerIdOrPhone: '03001234567',
+        issueCategory: 'Speed Issue',
+        description: 'bad'
+      })
+    });
+    assert.equal(shortComplaintRes.status, 400);
+
+    // 3. Complaint lookup with non-existent / invalid ticket format
+    const notFoundTicketRes = await fetch(`${baseUrl}/api/complaints/INVALID-TICKET-9999`);
+    assert.equal(notFoundTicketRes.status, 404);
+    const notFoundJson = await notFoundTicketRes.json();
+    assert.equal(notFoundJson.success, false);
+
+  } finally {
+    server.close();
+  }
+});
